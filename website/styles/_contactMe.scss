@@ -1,0 +1,66 @@
+.contactMe {
+    background-color: $veryLightGrey;
+    // .form-group {
+    //     margin-bottom: 1rem;
+    // }
+    // .form-control {
+    //     display: block;
+    //     width: 100%;
+    //     padding: .375rem .75rem;
+    //     font-size: 1rem;
+    //     line-height: 1.5;
+    //     color: $darkGrey;
+    //     background-color: $white;
+    //     background-clip: padding-box;
+    //     border: 1px solid $lightGrey;
+    //     border-radius: .5rem;
+    //     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    // }
+    &_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+        @include breakpoint-up(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }  
+    }
+    &_elem {
+        align-self: center;
+        place-self: center stretch;
+    }
+    &_elem:last-child {
+        @include breakpoint-up(md) {
+            grid-column: span 2;
+        }
+    }
+    label {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+    input,textarea {
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: $darkGrey;
+        background-color: $white;
+        background-clip: padding-box;
+        border: 1px solid $lightGrey;
+        border-radius: .5rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    input:hover, .contactMe textarea:hover {
+        border: 1px solid $lightBlue;
+    }
+    textarea {
+        margin-bottom: 2rem;
+    }
+    a.btn {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 30px;
+    }
+}

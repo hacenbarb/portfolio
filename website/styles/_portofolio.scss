@@ -1,0 +1,51 @@
+.portfolio {
+    background-color: $lighterGreen;
+    overflow: hidden;
+    h2 {
+        display: inline-block;
+    }
+    &_smedia {
+        float: right;
+        >a {
+            color: $darkGrey;
+            transition: color 300ms ease-in-out;
+            padding-top: 1rem;
+            &:not(:last-child) {
+                padding-right: 25px;
+            }
+            &:hover {
+                color: $lightGreen;
+            }
+        }
+    }
+    &_grid {
+        display: grid;
+        // grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+        @include breakpoint-up(sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }  
+        @include breakpoint-up(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }  
+
+        @include breakpoint-up(xxl) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+    &_grid>.project{
+        justify-self: center;
+        align-self: center;
+        background-color: $darkGrey;
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+        box-shadow: 0 3px 22px rgba(0,0,0,.15);
+        transition: all 300ms ease-in-out;
+        &:hover{
+            transform: scale(1.025);
+        }
+    }
+}

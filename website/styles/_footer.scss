@@ -1,0 +1,10 @@
+footer {
+    background-color: $lightGrey ;
+    p {
+        margin: 15px;
+        color: $black;
+        &:hover {
+            cursor:default;
+        }
+    }
+}
