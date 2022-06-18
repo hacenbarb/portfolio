@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio landing page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacenbarb/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "hacen barboucha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hacenbarb/portfolio/issues"
+  },
+  "homepage": "https://github.com/hacenbarb/portfolio#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
+}

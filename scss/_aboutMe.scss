@@ -4,7 +4,7 @@
     overflow: hidden;
     // background-color: $veryLightGrey;
     p {
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
     .flex {
         @include breakpoint-up(md) {
